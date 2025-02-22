@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BloodBridge.com</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/home_page/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg nav-bg p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"
+          ><img class="logo" src="/home_page/images/logo.webp" alt="" />
+          BloodBridge
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/home_page/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/all_donors/all_donors.html"
+                >All Dornors</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/all_events/all_events.html"
+                >All Ongoing Events</a
+              >
+            </li>
+            <li class="nav-item" id="add-event">
+              <a class="nav-link" href="/add_events/add_events.html"
+                >Add Event</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about_us/about_us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/our_services/our_services.html"
+                >Our Services</a
+              >
+            </li>
+          </ul>
+
+          <div class="d-flex">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" id="register">
+                <a class="nav-link" href="/register_page/register.html"
+                  >Register</a
+                >
+              </li>
+              <li class="nav-item" id="login">
+                <a class="nav-link" href="/login_page/login.html">Login</a>
+              </li>
+              <li class="nav-item" id="profile">
+                <a
+                  class="nav-link"
+                  href="/profile_page/profile.html"
+                  id="profile"
+                  >profile</a
+                >
+              </li>
+              <li class="nav-item" id="logout">
+                <a class="nav-link">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner container mt-5">
+      <h1>Give Blood, Save Lives – Be a Hero Today!"</h1>
+      <h3 class="mb-5">__<span class="text-danger">Blood</span>Bridge</h3>
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/home_page/images/banner.webp" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="/home_page/images/banner2.webp" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle"
+            >
+              <h1>Make difference</h1>
+              <p>
+                "Your blood can make a difference. Help those in need and give
+                hope to countless individuals."
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/home_page/images/banner4.jpg" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle"
+            >
+              <h1>Join today</h1>
+              <p>
+                "Join the movement today. Donate blood, share life, and become a
+                hero in your community."
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="donate-text mt-5 mb-5">
+      <h1 class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          fill="darkred"
+          class="bi bi-box2-heart-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1zM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+          />
+        </svg>
+      </h1>
+      <h1 class="text-center">
+        "Donate Your <span class="text-danger">Blood</span> to Us, Save
+        <br />More <span class="text-success">Life</span> Together"
+      </h1>
+    </div>
+    <div class="home-about-section d-flex row gap-5 container-fluid p-4">
+      <div class="home-about-text col-md-6 col-lg-6">
+        <h1>Together We Can Make World More Health & Better</h1>
+        <small>
+          Every drop of blood you donate is a step toward saving lives and
+          building a healthier world. Blood donations help patients undergoing
+          surgeries, accident victims, and those battling life-threatening
+          conditions. By coming together as a community, we can ensure no one
+          suffers due to a shortage of blood. Your kindness can bring hope,
+          healing, and a second chance at life. Join us in making a
+          difference—because a small act of generosity can create a ripple of
+          positive change. 💖🩸
+        </small>
+        <ul class="service-list mt-3">
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="darkred"
+              class="bi bi-check-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+              />
+            </svg>
+            Good Service
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="darkred"
+              class="bi bi-check-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+              />
+            </svg>
+            Help People
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="darkred"
+              class="bi bi-check-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+              />
+            </svg>
+            Hygine Tools
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="darkred"
+              class="bi bi-check-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+              />
+            </svg>
+            24h Service
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="darkred"
+              class="bi bi-check-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+              />
+            </svg>
+            Blood Bank
+          </li>
+        </ul>
+        <div class="service-button">
+          <a
+            href="/our_services/our_services.html"
+            class="btn btn-outline-danger mb-5"
+            >Our services</a
+          >
+        </div>
+      </div>
+      <div class="home-about-image-container col-md-5 col-lg-5">
+        <img src="/home_page/images/blood.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="home-service-container container-fluid mt-150 mb-5 p-3">
+      <div class="row justify-content-around align-items-stretch g-3">
+        <div class="col-12">
+          <h1 class="text-center text-white mt-3 mb-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="white"
+              class="bi bi-person-gear"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"
+              />
+            </svg>
+            Best Services
+          </h1>
+        </div>
+
+        <!-- Blood Donation Card -->
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="card w-100 d-flex flex-column p-3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="darkred"
+                  class="bi bi-plus-square-dotted"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"
+                  />
+                </svg>
+              </h5>
+              <h5 class="card-title text-center">Blood Donation</h5>
+              <p class="card-text flex-grow-1 text-center">
+                Blood donation is a life-saving act where individuals
+                voluntarily give blood to help patients in need. A single
+                donation can save multiple lives.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 24h Service Card -->
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="card w-100 d-flex flex-column p-3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="darkred"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"
+                  />
+                </svg>
+              </h5>
+              <h5 class="card-title text-center">24h Service</h5>
+              <p class="card-text flex-grow-1 text-center">
+                24h Blood Donation Service ensures that blood is available
+                anytime for emergencies, helping those in critical need.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blood Bank Card -->
+        <div class="col-md-6 col-lg-3 d-flex">
+          <div class="card w-100 d-flex flex-column p-3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="darkred"
+                  class="bi bi-shop-window"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5"
+                  />
+                </svg>
+              </h5>
+              <h5 class="card-title text-center">Blood Bank</h5>
+              <p class="card-text flex-grow-1 text-center">
+                A Blood Bank collects, stores, and distributes donated blood to
+                ensure a steady supply for emergencies, surgeries, and medical
+                treatments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Available donors-->
+    <div
+      class="donors-container d-flex flex-wrap row justify-content-center align-items-stretch container mx-auto mt-150"
+      id="donors-container"
+    >
+      <div class="col-12 mb-3">
+        <h1>Need Emergency <span class="text-danger">Blood</span>?</h1>
+        <h1 class="text-center available-header p-5 mt-3">Available Donors</h1>
+      </div>
+    </div>
+    <!-- details - modal -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Donor details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              onclick="clearData()"
+            ></button>
+          </div>
+          <div class="modal-body" id="modal-container"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+              onclick="clearData()"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--All events-->
+    <div
+      class="event-container row justify-content-center align-items-stretch g-3 container-fluid mx-auto mt-150"
+      id="event-container"
+    >
+      <div class="col-12">
+        <h1 class="text-center p-5 text-white">
+          Our Ongoing Events
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="white"
+            class="bi bi-calendar4-event"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"
+            />
+            <path
+              d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </h1>
+      </div>
+    </div>
+    <!--event-datails model-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Event details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modal-container"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-about-us container mt-150 p-4">
+      <h1 class="text-center p-4 text-white about-header d-inline-block">
+        About Us
+      </h1>
+      <p class="mt-5 text-white fs-lg">
+        At BloodBridge, we believe that no life should be lost due to a shortage
+        of blood. Our platform connects voluntary blood donors with those in
+        urgent need, making the donation process fast, efficient, and
+        accessible. Whether it's an emergency or a planned medical procedure, we
+        ensure that blood is available when and where it's needed. By building a
+        strong network of donors and recipients, we are creating a system where
+        saving lives becomes easier than ever.
+      </p>
+      <h4>
+        <i
+          >Join us today and be the reason someone gets a second chance at
+          life.</i
+        >
+        <a href="/about_us/about_us.html" class="btn btn-outline-dark mx-2"
+          >click here to know more about us</a
+        >
+      </h4>
+    </div>
+
+    <footer class="footer-bg text-white py-5 mt-150">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-md-4 text-center">
+            <h5 class="fw-bold">About BloodBridge</h5>
+            <p class="small">
+              BloodBridge is a life-saving platform that connects blood donors
+              with those in urgent need. Join us in making a difference—one
+              donation at a time.
+            </p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <h5 class="fw-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="/home_page/home.html"
+                  class="text-white text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about_us/about_us.html"
+                  class="text-white text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/add_events/add_events.html"
+                  class="text-white text-decoration-none"
+                  >Request Blood</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/our_services/our_services.html"
+                  class="text-white text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <h5 class="fw-bold">Contact Us</h5>
+            <p class="small">
+              <i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh
+            </p>
+            <p class="small">
+              <i class="fas fa-envelope"></i> support@bloodbridge.com
+            </p>
+            <p class="small"><i class="fas fa-phone"></i> +880 1234 567 890</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <h5 class="fw-bold">Follow Us</h5>
+          <a href="#" class="text-white me-3"
+            ><i class="fab fa-facebook fa-lg"></i
+          ></a>
+          <a href="#" class="text-white me-3"
+            ><i class="fab fa-twitter fa-lg"></i
+          ></a>
+          <a href="#" class="text-white me-3"
+            ><i class="fab fa-instagram fa-lg"></i
+          ></a>
+          <a href="#" class="text-white"
+            ><i class="fab fa-linkedin fa-lg"></i
+          ></a>
+        </div>
+
+        <hr class="bg-white my-3" />
+
+        <div class="text-center small">
+          &copy; 2025 BloodBridge. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!--bootstrap script-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--home script-->
+    <script src="/home_page/home.js"></script>
+  </body>
+</html>

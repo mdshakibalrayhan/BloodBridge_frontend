@@ -1,0 +1,57 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+.nav-bg {
+  background-color: rgb(212, 75, 75);
+}
+.nav-item > a {
+  padding: 5px 10px;
+  color: bisque;
+  font-size: larger;
+}
+.navbar-nav > li:hover,
+.nav-item > a:hover {
+  background: #000;
+  color: white;
+  border-radius: 15px;
+}
+.mt-150 {
+  margin-top: 150px;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.shadow {
+  box-shadow: 4px 4px 12px grey;
+}
+.round {
+  border-radius: 30px;
+}
+
+.service-card {
+  background: white;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+  transition: color 0.3s;
+}
+
+.service-card:hover i {
+  color: #a71d2a;
+}
+
+.footer-bg {
+  background-color: rgb(1, 1, 15);
+}

@@ -1,0 +1,83 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(246, 251, 255);
+}
+.nav-bg {
+  background-color: rgb(212, 75, 75);
+}
+.nav-item > a {
+  padding: 5px 10px;
+  color: bisque;
+  font-size: larger;
+}
+.navbar-nav > li:hover,
+.nav-item > a:hover {
+  background: #000;
+  color: white;
+  border-radius: 15px;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.available-header {
+  background: #000;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 4px 4px 8px grey;
+}
+
+.card {
+  height: 100%; /* Ensures all cards take full height */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 8px black;
+}
+
+.card-img-top {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.card-body {
+  flex-grow: 1; /* Makes sure all card bodies expand equally */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body a {
+  width: 100%; /* Makes buttons full width */
+}
+
+.donors-container {
+  background-color: rgb(165, 196, 190);
+  padding: 30px;
+  border-radius: 20px;
+}
+.details-img {
+  width: 100%;
+  height: auto;
+}
+.details-img img {
+  width: 100%;
+}
+.filter-by-blood {
+  background: #78afa1;
+  border-radius: 20px;
+  padding: 20px;
+}
+.footer-bg {
+  background-color: rgb(1, 1, 15);
+}
+.form-container {
+  background-color: rgb(176, 243, 243);
+  border-radius: 15px;
+}

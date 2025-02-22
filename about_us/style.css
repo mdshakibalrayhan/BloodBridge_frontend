@@ -1,0 +1,69 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(246, 251, 255);
+}
+.nav-bg {
+  background-color: rgb(212, 75, 75);
+}
+.nav-item > a {
+  padding: 5px 10px;
+  color: bisque;
+  font-size: larger;
+}
+.navbar-nav > li:hover,
+.nav-item > a:hover {
+  background: #000;
+  color: white;
+  border-radius: 15px;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.footer-bg {
+  background-color: rgb(1, 1, 15);
+}
+.onedrop-img img {
+  width: 100%;
+  height: 100%;
+}
+.shadow {
+  box-shadow: 4px 4px 8px black;
+}
+.rounded {
+  border-radius: 30px;
+}
+.onedrop-container {
+  background-color: aqua;
+}
+.bloodbridge-work {
+  background-image: url("images/pexels-karolina-grabowska-4040561.jpg");
+  background-size: cover; /* Ensures the image covers the container */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px; /* Minimum height to prevent shrinking */
+  border-radius: 20px;
+  box-shadow: 4px 4px 8px black;
+  margin-bottom: 50px;
+}
+.why-bloodbridge {
+  height: auto;
+  margin-bottom: 70px;
+  background-color: rgb(190, 75, 75);
+}
+.round {
+  display: inline-block;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px black;
+  padding: 20px;
+}
+.fs-lg {
+  font-size: 20px;
+}

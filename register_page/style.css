@@ -1,0 +1,38 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(246, 251, 255);
+}
+.nav-bg {
+  background-color: rgb(212, 75, 75);
+}
+.nav-item > a {
+  padding: 5px 10px;
+  color: bisque;
+  font-size: larger;
+}
+.navbar-nav > li:hover,
+.nav-item > a:hover {
+  background: #000;
+  color: white;
+  border-radius: 15px;
+}
+.mt-150 {
+  margin-top: 150px;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.footer-bg {
+  background-color: rgb(1, 1, 15);
+}
+.shadow {
+  box-shadow: 4px 4px 12px grey;
+}
+.form-container {
+  background-color: rgb(176, 243, 243);
+  border-radius: 15px;
+}
