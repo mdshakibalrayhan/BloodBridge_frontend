@@ -128,7 +128,7 @@ const ProfileDetails = (user) => {
               }</h5>
               <h5>Address: ${user.address}</h5>
               <div class="mt-5 text-center">
-                <a href="/update_profile/update_profile.html" class="btn btn-outline-dark shadow text-white p-3">Update Profile</a>
+                <a href="../update_profile/update_profile.html" class="btn btn-outline-dark shadow text-white p-3">Update Profile</a>
               </div>
             </div>
           </div>

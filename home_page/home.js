@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
           localStorage.removeItem("token");
           console.log(localStorage.getItem("token"));
           alert("Logged out successfully!");
-          window.location.href = "../index.html"; // Redirect to login
+          window.location.href = "../login_page/login.html"; // Redirect to login
         })
         .catch((err) => console.error("Error logging out:", err));
     });
@@ -94,7 +94,7 @@ const displayDonorsHome = (donors) => {
   const See_all_button = document.createElement("div");
   See_all_button.classList.add("col-12");
   See_all_button.innerHTML = `
-    <a class='btn btn-outline-dark fw-bold mt-5 p-4' href="/all_donors/all_donors.html">See all available donors</a>
+    <a class='btn btn-outline-dark fw-bold mt-5 p-4' href="../all_donors/all_donors.html">See all available donors</a>
     `;
   donorContainer.appendChild(See_all_button);
 };
@@ -134,7 +134,7 @@ const displayEventsHome = (events) => {
   const See_all_button = document.createElement("div");
   See_all_button.classList.add("col-12");
   See_all_button.innerHTML = `
-    <a class='btn btn-outline-light fw-bold mt-5 mb-5 p-4' href="/all_events/all_events.html">See all events</a>
+    <a class='btn btn-outline-light fw-bold mt-5 mb-5 p-4' href="../all_events/all_events.html">See all events</a>
     `;
   EventContainer.appendChild(See_all_button);
 };
