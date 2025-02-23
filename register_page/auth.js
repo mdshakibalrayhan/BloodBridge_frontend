@@ -60,5 +60,7 @@ const registrationHandler = (event) => {
     .then((data) => console.log("Server response:", data))
     .catch((err) => console.error("Error:", err));
 
-  alert("Form submitted successfully!");
+  alert(
+    "Form submitted successfully,please check your email to verify it's you!!"
+  );
 };

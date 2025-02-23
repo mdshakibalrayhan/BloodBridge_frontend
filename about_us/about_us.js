@@ -35,7 +35,7 @@ const load = () => {
           localStorage.removeItem("token");
           console.log(localStorage.getItem("token"));
           alert("Logged out successfully!");
-          window.location.href = "/home_page/home.html"; // Redirect to login
+          window.location.href = "../index.html"; // Redirect to login
         })
         .catch((err) => console.error("Error logging out:", err));
     });

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     logout_tab.style.display = "none";
     profile_tab.style.display = "none";
     add_event.style.display = "none";
-    window.location.href = "/home_page/home.html";
+    window.location.href = "../index.html";
   }
 
   if (logout_tab) {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
           console.log("Logout response:", data);
           localStorage.removeItem("token");
           alert("Logged out successfully!");
-          window.location.href = "/index.html";
+          window.location.href = "../index.html";
         })
         .catch((err) => console.error("Error logging out:", err));
     });
@@ -293,7 +293,7 @@ const SaveEventData = () => {
       alert("Event updated successfully!");
     })
     .catch((err) => console.error("Error updating event:", err));
-  window.location.href = "/profile_page/profile.html";
+  window.location.href = "./profile.html";
   alert("Event updated successfully!");
 };
 
@@ -395,7 +395,7 @@ const acceptRequest = (eventID) => {
     })
     .then((data) => {
       console.log("Update response:", data);
-      window.location.href = "/profile_page/profile.html";
+      window.location.href = "./profile.html";
       alert("Request Updaed successfully!");
     })
     .catch((err) => console.error("Error updating event:", err));

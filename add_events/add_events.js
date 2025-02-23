@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     logout_tab.style.display = "none";
     profile_tab.style.display = "none";
     add_event.style.display = "none";
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
   }
 
   if (logout_tab) {
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
           console.log("Logout response:", data);
           localStorage.removeItem("token");
           alert("Logged out successfully!");
-          window.location.href = "/home_page/home.html"; // Redirect to login
+          window.location.href = "../index.html"; // Redirect to login
         })
         .catch((err) => console.error("Error logging out:", err));
     });
@@ -80,6 +80,7 @@ const addEvent = () => {
     .then((data) => {
       console.log("Event adding response:", data);
       alert("Event added successfully!");
+      window.location.href = "../all_events/all_events.html";
     })
     .catch((err) => console.error("Error adding event:", err));
 };

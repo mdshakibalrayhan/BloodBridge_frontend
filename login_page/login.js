@@ -39,7 +39,7 @@ const logInHandler = (event) => {
       if (data.token) {
         localStorage.setItem("token", data.token);
         alert("Login successful!");
-        window.location.href = "/index.html";
+        window.location.href = "../index.html";
       } else {
         alert("Login failed! Check your credentials.");
       }
